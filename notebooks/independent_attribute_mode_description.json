@@ -1,0 +1,267 @@
+{
+    "meta": {
+        "num_tuples": 32561,
+        "num_attributes": 7,
+        "num_attributes_in_BN": 6,
+        "all_attributes": [
+            "ssn",
+            "age",
+            "education",
+            "marital-status",
+            "relationship",
+            "sex",
+            "income"
+        ],
+        "candidate_keys": [
+            "ssn"
+        ],
+        "non_categorical_string_attributes": [],
+        "attributes_in_BN": [
+            "age",
+            "relationship",
+            "income",
+            "marital-status",
+            "education",
+            "sex"
+        ]
+    },
+    "attribute_description": {
+        "ssn": {
+            "name": "ssn",
+            "data_type": "SocialSecurityNumber",
+            "is_categorical": false,
+            "is_candidate_key": true,
+            "min": 123456789,
+            "max": 999999999,
+            "missing_rate": 0.0,
+            "distribution_bins": [
+                123456789.0,
+                167283949.5,
+                211111110.0,
+                254938270.5,
+                298765431.0,
+                342592591.5,
+                386419752.0,
+                430246912.5,
+                474074073.0,
+                517901233.5,
+                561728394.0,
+                605555554.5,
+                649382715.0,
+                693209875.5,
+                737037036.0,
+                780864196.5,
+                824691357.0,
+                868518517.5,
+                912345678.0,
+                956172838.5
+            ],
+            "distribution_probabilities": [
+                0.052345962963463964,
+                0.04576578015700957,
+                0.05294152824373105,
+                0.0487103703279887,
+                0.04706080654071234,
+                0.05146851917258292,
+                0.03878950901470576,
+                0.05477268652686073,
+                0.03334442459180715,
+                0.052402572343041236,
+                0.04851303376743608,
+                0.05313678585436659,
+                0.060485713811812676,
+                0.04814369854717137,
+                0.051438310318011216,
+                0.05151891522252886,
+                0.051403973266660456,
+                0.047735930908407165,
+                0.059651404291692356,
+                0.05037007413000969
+            ]
+        },
+        "age": {
+            "name": "age",
+            "data_type": "Integer",
+            "is_categorical": false,
+            "is_candidate_key": false,
+            "min": 17,
+            "max": 90,
+            "missing_rate": 0.09867633057952765,
+            "distribution_bins": [
+                17.0,
+                20.65,
+                24.3,
+                27.95,
+                31.6,
+                35.25,
+                38.9,
+                42.55,
+                46.2,
+                49.85,
+                53.5,
+                57.15,
+                60.8,
+                64.44999999999999,
+                68.1,
+                71.75,
+                75.4,
+                79.05,
+                82.7,
+                86.35
+            ],
+            "distribution_probabilities": [
+                0.07653249577244826,
+                0.09654554598432877,
+                0.07158773005087403,
+                0.10584022518015214,
+                0.1032847623527611,
+                0.08273482946022243,
+                0.09728053262667408,
+                0.09504616753164218,
+                0.055500553683715585,
+                0.06563896990944203,
+                0.04578960275240627,
+                0.0392710971137914,
+                0.03138613103101929,
+                0.017346274337483612,
+                0.009065571208344983,
+                0.0,
+                0.0018044915105798315,
+                0.0031151719873581834,
+                0.0,
+                0.002229847506756003
+            ]
+        },
+        "education": {
+            "name": "education",
+            "data_type": "String",
+            "is_categorical": true,
+            "is_candidate_key": false,
+            "min": 3,
+            "max": 12,
+            "missing_rate": 0.3196462025122079,
+            "distribution_bins": [
+                "10th",
+                "11th",
+                "12th",
+                "1st-4th",
+                "5th-6th",
+                "7th-8th",
+                "9th",
+                "Assoc-acdm",
+                "Assoc-voc",
+                "Bachelors",
+                "Doctorate",
+                "HS-grad",
+                "Masters",
+                "Preschool",
+                "Prof-school",
+                "Some-college"
+            ],
+            "distribution_probabilities": [
+                0.02721077409395732,
+                0.030662828489233164,
+                0.01111965602913836,
+                0.006026185783347988,
+                0.011413539806304246,
+                0.01974849515511626,
+                0.017044297172079878,
+                0.033813644589267215,
+                0.04159135097561913,
+                0.16900392737453168,
+                0.011660375321054708,
+                0.3223279786320407,
+                0.058780666162499835,
+                0.005087072402006603,
+                0.019911426875287744,
+                0.21459778113851513
+            ]
+        },
+        "marital-status": {
+            "name": "marital-status",
+            "data_type": "String",
+            "is_categorical": true,
+            "is_candidate_key": false,
+            "min": 7,
+            "max": 21,
+            "missing_rate": 0.2171309234974356,
+            "distribution_bins": [
+                "Divorced",
+                "Married-AF-spouse",
+                "Married-civ-spouse",
+                "Married-spouse-absent",
+                "Never-married",
+                "Separated",
+                "Widowed"
+            ],
+            "distribution_probabilities": [
+                0.13814072235730196,
+                0.0028439470308313174,
+                0.46861675697386485,
+                0.00799298621895999,
+                0.32446100266627875,
+                0.026792718035545265,
+                0.0311518667172177
+            ]
+        },
+        "relationship": {
+            "name": "relationship",
+            "data_type": "String",
+            "is_categorical": true,
+            "is_candidate_key": false,
+            "min": 4,
+            "max": 14,
+            "missing_rate": 0.23128896532661775,
+            "distribution_bins": [
+                "Husband",
+                "Not-in-family",
+                "Other-relative",
+                "Own-child",
+                "Unmarried",
+                "Wife"
+            ],
+            "distribution_probabilities": [
+                0.4031993971133711,
+                0.25903217218577124,
+                0.034480755093945485,
+                0.15606212515411283,
+                0.10629920530931485,
+                0.040926345143484415
+            ]
+        },
+        "sex": {
+            "name": "sex",
+            "data_type": "String",
+            "is_categorical": true,
+            "is_candidate_key": false,
+            "min": 4,
+            "max": 6,
+            "missing_rate": 0.4344154049322809,
+            "distribution_bins": [
+                "Female",
+                "Male"
+            ],
+            "distribution_probabilities": [
+                0.33096212027271577,
+                0.6690378797272841
+            ]
+        },
+        "income": {
+            "name": "income",
+            "data_type": "String",
+            "is_categorical": true,
+            "is_candidate_key": false,
+            "min": 4,
+            "max": 5,
+            "missing_rate": 0.44611651976290656,
+            "distribution_bins": [
+                "<=50K",
+                ">50K"
+            ],
+            "distribution_probabilities": [
+                0.7536738941500141,
+                0.246326105849986
+            ]
+        }
+    }
+}
